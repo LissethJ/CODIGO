@@ -52,5 +52,9 @@ git log
 ```bash
 git show 
 ```
+* Para subir los cambios a GitHub 
+```bash
+git push origin main
+```
 
 
