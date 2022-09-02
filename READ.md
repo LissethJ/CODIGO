@@ -18,6 +18,7 @@ git config --global user.email "email"
 
 ```bash
 git config --global user.name "username"
+```
 
 
 * Para poder empezar a usar el control de versiones git en nuestra carpeta
@@ -32,3 +33,24 @@ git init
 ```bash
 git status
 ```
+* Agrega los archivos a la memoria de la pc
+```bash
+git add
+```
+* Crear el registro degit  los cambios realizados 
+```bash
+git commit -m "comentario"
+```
+* Para ver historial de commits 
+
+[ ] git log retorna un `id`con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit
+```bash
+git log 
+```
+* Para poder ver el detalle del commit que hicimos
+
+```bash
+git show 
+```
+
+
