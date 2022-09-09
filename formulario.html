@@ -13,31 +13,30 @@
         <!-- IMPORTANT: casi todos los tipos de input tienen placeholder-->
 
         <!-- INPUT type: text-->
+        <!-- required : true-->
         <p>
-            <input 
-            id="input-nombre"
-            type="text" 
-            placeholder="Ingrese su nombre">
+            <input id="input-nombre" type="text" required value="" placeholder="Ingrese su nombre" name="nombre" readonly>
         </p>
         
         <!-- INPUT type: number -->
         <p>
-            <input type="number" placeholder="Ingrese su numero">
+            <input required type="number" max="8" min="0" placeholder="Ingrese su DNI" name="edad" style="width: 140px;">
         </p>
+
 
         <!-- INPUT type: email-->
         <p>
-            <input type="email" placeholder="Ingrese su correo">
+            <input required type="email" placeholder="Ingrese su correo">
         </p>
 
         <!-- INPUT type: password-->
         <p>
-            <input type="password" placeholder="Ingrese su contraseña">
+            <input required type="password" placeholder="Ingrese su contraseña">
         </p>
 
         <!-- INPUT type: date-->
         <p>
-            <input type="date" placeholder="Ingrese su fecha">
+            <input required type="date" placeholder="Ingrese su fecha">
         </p>
 
         <!--lista de opciones-->
