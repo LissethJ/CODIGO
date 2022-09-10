@@ -37,9 +37,42 @@ h1[role="titulo"] {
 
 
 .product_cell {
-    border: 2px solid red;
+    border: 2px solid blue;
     border-radius: 18px;
     padding: 10px;
     margin: 20px;
 }
+
+.laptop > h2 {
+    color: blue;
+}
+
+.laptop > h3 {
+    color: aquamarine;
+    text-align: right;
+    padding-right: 10px;
+}
+
+
+.celular > h2 {
+    color: red;
+
+}
+
+.celular > h3 {
+    color: rebeccapurple;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.audif > h2 {
+    color: green;
+}
+
+.audif > h3 {
+    color: aquamarine;
+    text-align: right;
+    padding-right: 10px;
+}
+
 
