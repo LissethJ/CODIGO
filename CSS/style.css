@@ -1,0 +1,45 @@
+/*selectores*/
+
+/* selector de elemento */
+h1 {
+    color: green;
+    background-color: beige;
+    text-align: center;
+    padding: 20 px;
+    font-size: 20 px;
+}
+
+/* selector de atributo 
+h1[role="titulo"] {
+    color: black;
+}
+
+
+
+ selector de clase 
+.titulo {
+    color: red;
+    font-size: 30 px;
+    background-color: aqua;
+    
+}
+ selector de ID 
+#titulo_huawei {
+    color: yellow;
+    font-size: 30 px;
+    background-color: aqua;
+} */
+
+
+#div_temas {
+                display: none;
+            }
+
+
+.product_cell {
+    border: 2px solid red;
+    border-radius: 18px;
+    padding: 10px;
+    margin: 20px;
+}
+
