@@ -1,5 +1,10 @@
 /*selectores*/
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /* selector de elemento */
 h1 {
     color: green;
