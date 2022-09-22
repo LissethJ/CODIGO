@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    
+    margin: 0;
+    padding: 0;
+  }
+
+
+/*body {
+    background-color: hsl(217, 54%, 11%);
+}*/
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+   
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    width: 23%;
+    height: 70%;
+    
+
+    
+
+    
+}
+
+.equilibrium {
+    background: url(../images/image-equilibrium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
+    height: 200px;
+    width: 280px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-right: 20%;
+    margin-bottom: 6%;
+    padding: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+    
+    
+}
+
+.secundary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    font-family: outfit;
+}
+
+.main-tittle {
+    color: hsl(0, 0%, 100%);
+    font-size: 19px;
+    padding: 17px;
+}
+
+.paragraph {
+    color: hsl(215, 51%, 70%);
+    font-size: 13px;
+    padding-left: 19px;
+    padding-right: 28px;
+    padding-top: 5px;
+    letter-spacing: 1px;
+    
+}
+
+.logo {
+    display: flex;
+    margin-left: 18px;
+    
+    
+}
+
+.logo p {
+    color: hsl(178, 100%, 50%);
+    font-family: outfit;
+    font-size: 16px;
+
+}
+
+.contador {
+    display: flex;
+    
+}
+
+.contador p {
+    color: hsl(215, 51%, 70%);
+    font-family: outfit;
+    font-size: 13px;
+    display: inline-flex;
+}
+
+.text-2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.footer p {
+    color: hsl(215, 51%, 70%);
+    font-family: outfit;
+    margin-top: 10%;
+    font-size: 15px;
+    font-weight: 100;
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+.footer {
+    display: flex;
+}
+
+.letras p {
+    display: inline-flex;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    font-size: 15px;
+   
+}
+
+.avatar {
+    background: url(../images/image-avatar.png);
+    overflow: hidden;
+    margin: 25px 5px 10px 19px;
+    width: 30px;
+    height: 30px;
+    border-color: 10px solid hsl(0, 0%, 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.line hr {
+    width: 250px;
+    background-position: center;
+    
+}
+
+
+
+

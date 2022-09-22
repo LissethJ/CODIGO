@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 70px;
+    color: #ffc107;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(247,-1,181),
+    1px 1px 0 rgb(240,-8,174),
+    2px 2px 0 rgb(232,-16,166),
+    3px 3px 0 rgb(224,-24,158),
+    4px 4px 0 rgb(216,-32,150),
+    5px 5px 0 rgb(209,-39,143),
+    6px 6px 0 rgb(201,-47,135),
+    7px 7px 0 rgb(193,-55,127),
+    8px 8px  0 rgb(185,-63,119),
+    9px 9px 8px rgba(56,105,148,0.44),
+    9px 9px 1px rgba(56,105,148,0.5),
+    0px 0px 8px rgba(56,105,148,.2);
+
+    animation-duration: 6s;
+    animation-name: screen-saver;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes screen-saver {
+    from {
+      margin-left: 100%;
+    }
+  
+    to {
+      margin-right: 100%;
+    }
+  
+    /* porcentajes de fotogramas */
+    10% {
+      margin-top: 500px;
+    }
+  
+    30% {
+      margin-top: -500px;
+    }
+  
+    50% {
+      margin-top: 500px;
+    }
+  
+    70% {
+      margin-top: -500px;
+    }
+  
+    90% {
+      margin-top: 500px;
+    }
+  
+    100% {
+      margin-top: 0;
+    }
+  }
