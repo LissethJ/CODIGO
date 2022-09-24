@@ -18,6 +18,12 @@ h1 {
     height: 100vh;
     max-width: 600px;
     padding: 20px;
+
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main";
+    grid-template-rows: 100px auto;
     
 }
 
@@ -25,6 +31,8 @@ h1 {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
+    background-color: blue;
+    grid-area: header;
 
 }
 
@@ -44,6 +52,23 @@ h1 {
 .header a:hover {
     color: hsl(219, 85%, 26%);
     text-decoration: none;
+}
+
+.main {
+    background-color: green;
+    grid-area: main;
+    display: grid;
+    align-content: flex-start;
+    gap: 10px;
+  
+
+}
+
+.main .card {
+    height: 80px;
+    background-color: brown;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 
