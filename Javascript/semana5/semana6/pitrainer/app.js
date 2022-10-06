@@ -1,40 +1,47 @@
-// Escribir un texto dentro del elemento:
-document.getElementById("div_container").innerText = "Hola a todos";
-// Darle estilos al elemento:
+const button_start = document.getElementById("button_start");
 
-function test() {
-	document.getElementById("div_container").classList.add("big");
-}
-
-function remove() {
-	document.getElementById("div_container").classList.remove("big");
-}
-
-// Selector de varios elementos:
-const parrafos = document.getElementsByTagName("p");
-console.log(parrafos);
-
-// parrafos.forEach((p) => {
-// 	console.log(p);
-// });
-
-const array_parrafos = document.querySelectorAll("p");
-console.log(array_parrafos);
-array_parrafos.forEach((p) => {
-	p.onclick = function () {
-		p.innerText = "bruno";
-		p.classList.add("big");
-	};
+button_start.addEventListener("click", function () {
+	this.disabled = true;
+	document.getElementById("game").style.display = "block";
 });
 
-const nombre = document.getElementById("input_name");
+// Game:
+const pi_decimals =
+	"1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489549303819644288109";
+let position = 0;
 
-nombre.addEventListener("keyup", function (evento_keyup) {
-	const text = nombre.value;
-	// console.log("value:", text);
-	console.log("key: ", evento_keyup.key);
-	console.log("code: ", evento_keyup.code);
-	// array_parrafos.forEach((p) => {
-	// 	p.innerText = text;
-	// });
+const input_decimals = document.getElementById("input_decimals");
+const result_decimals = document.getElementById("result_decimals");
+const result_score = document.getElementById("result_score");
+
+// keydown -> keypress -> .value -> keyup
+input_decimals.addEventListener("keyup", function () {
+	this.value = "";
+	this.focus();
+});
+
+input_decimals.addEventListener("keydown", function (evt) {
+	if (evt.code == "Enter") return;
+	// Convirtiendo la tecla presionado a el caracter que representa:
+	const decimal = String.fromCharCode(evt.keyCode);
+	if (decimal == "") return;
+	if (decimal == " ") return;
+	if (isNaN(decimal)) return; // is Not a Number
+	// Si decimal llegó hasta aquí, es porque el usuario presiono un numero:
+	// Comprobar si decimal es igual al siguiente decimal de la cadena:
+	if (decimal == pi_decimals.charAt(position)) {
+		// acierto:
+		result_decimals.innerText += decimal;
+		result_decimals.style.color = "green";
+		position++;
+		result_score.innerText = position;
+	} else {
+		// desacierto:
+		result_decimals.style.color = "red";
+		input_decimals.disabled = true;
+	}
+	// Volver el texto a negro:
+	setTimeout(() => {
+		result_decimals.style.color = "black";
+	}, 500);
 });
